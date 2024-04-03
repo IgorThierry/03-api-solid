@@ -6,7 +6,9 @@
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "prisma:init": "prisma init",
+    "prisma:generate": "prisma generate"
   },
   "keywords": [],
   "author": "",
