@@ -7,6 +7,8 @@
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
+    "test": "vitest run src",
+    "test:watch": "vitest src",
     "prisma:init": "prisma init",
     "prisma:generate": "prisma generate",
     "prisma:migrate:dev": "prisma migrate dev",
@@ -23,7 +25,9 @@
     "prisma": "5.11.0",
     "tsup": "8.0.2",
     "tsx": "4.7.1",
-    "typescript": "5.4.3"
+    "typescript": "5.4.3",
+    "vite-tsconfig-paths": "4.3.2",
+    "vitest": "1.4.0"
   },
   "dependencies": {
     "@prisma/client": "5.11.0",
